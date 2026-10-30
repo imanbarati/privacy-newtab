@@ -115,8 +115,8 @@
 
       const remove = document.createElement("button");
       remove.className = "remove-link";
-      remove.textContent = "\u00d7";
       remove.title = "Remove";
+      remove.textContent = "\u00d7";
       remove.addEventListener("click", (e) => {
         e.preventDefault();
         e.stopPropagation();
@@ -188,7 +188,7 @@
   function applySettingsToUI() {
     document.getElementById("search-engine").value = settings.searchEngine;
     document.getElementById("show-topsites").checked = settings.showTopsites;
-    document.getElementById("show-quicklinks").checked = settings.clock24h;
+    document.getElementById("show-quicklinks").checked = settings.showQuicklinks;
     document.getElementById("clock-24h").checked = settings.clock24h;
     document.getElementById("bg-style").value = settings.bgStyle;
     applyTheme();
