@@ -1,0 +1,115 @@
+================================================================================
+CHROME WEB STORE — COPY/PASTE FIELDS FOR "Privacy New Tab"
+================================================================================
+
+PRODUCT NAME
+------------
+Privacy New Tab
+
+
+SUMMARY (max 132 characters)
+----------------------------
+Clean private new tab: clock, search, top sites & quick links. No AI ads, no tracking, no telemetry.
+
+
+DETAILED DESCRIPTION
+--------------------
+Privacy New Tab restores a simple, classic new-tab page — without AI suggestions, sponsored content, or tracking.
+
+WHAT YOU GET
+• Live clock and date
+• Search box (DuckDuckGo by default — switch to Google, Bing, Brave, or Startpage)
+• Most Visited sites from Chrome’s own list
+• Custom quick links you add and remove yourself
+• Soft themes: gradient, dark, light, or nature vibe
+• 12- or 24-hour clock
+
+PRIVACY FIRST
+• No accounts
+• No analytics or telemetry
+• No ads and no AI features
+• Settings and quick links stay in chrome.storage.local on your device only
+• Opening a new tab does not contact any developer server
+• Search queries go only to the engine you choose, when you press Enter
+
+PERMISSIONS (minimal)
+• storage — save your preferences and quick links locally
+• topSites — show the same most-visited list Chrome already keeps
+• favicon — show site icons from Chrome’s cache
+
+Open source: https://github.com/imanbarati/privacy-newtab
+Privacy policy: https://raw.githubusercontent.com/imanbarati/privacy-newtab/main/PRIVACY.md
+
+If you want a new tab that stays out of your way, this is it.
+
+
+CATEGORY
+--------
+Productivity
+
+
+LANGUAGE
+--------
+English
+
+
+OFFICIAL / HOMEPAGE URL
+-----------------------
+https://github.com/imanbarati/privacy-newtab
+
+
+SUPPORT URL
+-----------
+https://github.com/imanbarati/privacy-newtab/issues
+
+
+PRIVACY POLICY URL
+------------------
+https://raw.githubusercontent.com/imanbarati/privacy-newtab/main/PRIVACY.md
+
+
+SINGLE PURPOSE (Privacy practices)
+----------------------------------
+Provides a private new-tab page with clock, search, most-visited sites, and user-defined quick links. No tracking or ads.
+
+
+PERMISSION JUSTIFICATIONS
+-------------------------
+storage:
+Stores user preferences (search engine, theme, clock format) and custom quick links only on the device via chrome.storage.local. Data never leaves the browser.
+
+topSites:
+Reads Chrome’s built-in most-visited sites list solely to display shortcuts on the new-tab page. Not transmitted.
+
+favicon:
+Retrieves site icons from Chrome’s internal favicon cache for display next to links. No third-party requests.
+
+
+DATA COLLECTION ANSWERS
+-----------------------
+Collects user data?                    No
+Personally identifiable information?   No
+Health information?                    No
+Financial and payment information?     No
+Authentication information?            No
+Personal communications?               No
+Location?                              No
+Web history?                           No
+User activity?                         No
+Website content?                       No
+Uses remote code?                      No
+
+
+ICON
+----
+Upload icons/icon128.png (128×128 PNG)
+
+
+SCREENSHOTS
+-----------
+Capture the live new-tab page at 1280×800 (or 640×400). Minimum 1, up to 5.
+
+
+VISIBILITY / PRICING
+--------------------
+Public · Free · All regions (or your choice)
