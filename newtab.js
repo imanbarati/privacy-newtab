@@ -136,7 +136,7 @@
       if (chrome?.runtime?.id) {
         return `chrome-extension://${chrome.runtime.id}/_favicon/?pageUrl=${encodeURIComponent(u.href)}&size=32`;
       }
-      return `https://www.google.com/s2/favicons?domain=${encodeURIComponent(u.hostname)}&sz=32`;
+      return fallbackIcon(u.hostname);
     } catch {
       return fallbackIcon("?");
     }
@@ -188,7 +188,7 @@
   function applySettingsToUI() {
     document.getElementById("search-engine").value = settings.searchEngine;
     document.getElementById("show-topsites").checked = settings.showTopsites;
-    document.getElementById("show-quicklinks").checked = settings.showQuicklinks;
+    document.getElementById("show-quicklinks").checked = settings.clock24h;
     document.getElementById("clock-24h").checked = settings.clock24h;
     document.getElementById("bg-style").value = settings.bgStyle;
     applyTheme();
