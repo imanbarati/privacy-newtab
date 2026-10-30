@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Privacy New Tab",
+  "version": "1.0.0",
+  "description": "A clean, private new tab page with classic features — no AI ads, no tracking, no telemetry. Just clock, search, top sites, and your stuff.",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": [
+    "storage",
+    "topSites",
+    "favicon"
+  ],
+  "optional_permissions": [
+    "bookmarks"
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Privacy New Tab",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "homepage_url": "https://github.com/imanbarati/privacy-newtab"
+}

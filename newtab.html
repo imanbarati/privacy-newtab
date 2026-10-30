@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New Tab</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg" id="bg"></div>
+  <div class="container">
+    <header class="header">
+      <div class="clock-block">
+        <div id="time" class="time">00:00</div>
+        <div id="date" class="date"></div>
+      </div>
+      <button id="settings-btn" class="icon-btn" title="Settings" aria-label="Settings">⚙</button>
+    </header>
+
+    <main class="main">
+      <form id="search-form" class="search-form" autocomplete="off">
+        <input
+          type="text"
+          id="search-input"
+          class="search-input"
+          placeholder="Search the web…"
+          spellcheck="false"
+          autofocus
+        />
+        <button type="submit" class="search-btn" title="Search">↗</button>
+      </form>
+
+      <section class="topsites" id="topsites">
+        <h2 class="section-title">Most Visited</h2>
+        <div class="topsites-grid" id="topsites-grid"></div>
+      </section>
+
+      <section class="quicklinks" id="quicklinks">
+        <h2 class="section-title">Quick Links</h2>
+        <div class="quicklinks-grid" id="quicklinks-grid"></div>
+        <button id="add-link-btn" class="add-link-btn">+ Add link</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span class="privacy-badge" title="No tracking • No AI ads • Data stays local">🔒 Privacy first</span>
+    </footer>
+  </div>
+
+  <div id="settings-panel" class="settings-panel hidden" role="dialog" aria-label="Settings">
+    <div class="settings-header">
+      <h2>Settings</h2>
+      <button id="close-settings" class="icon-btn" aria-label="Close">✕</button>
+    </div>
+    <div class="settings-body">
+      <label class="setting-row">
+        <span>Search engine</span>
+        <select id="search-engine">
+          <option value="https://duckduckgo.com/?q=">DuckDuckGo</option>
+          <option value="https://www.google.com/search?q=">Google</option>
+          <option value="https://www.bing.com/search?q=">Bing</option>
+          <option value="https://search.brave.com/search?q=">Brave</option>
+          <option value="https://www.startpage.com/sp/search?query=">Startpage</option>
+        </select>
+      </label>
+      <label class="setting-row">
+        <span>Show Most Visited</span>
+        <input type="checkbox" id="show-topsites" checked />
+      </label>
+      <label class="setting-row">
+        <span>Show Quick Links</span>
+        <input type="checkbox" id="show-quicklinks" checked />
+      </label>
+      <label class="setting-row">
+        <span>24-hour clock</span>
+        <input type="checkbox" id="clock-24h" />
+      </label>
+      <label class="setting-row">
+        <span>Background</span>
+        <select id="bg-style">
+          <option value="gradient">Soft gradient</option>
+          <option value="dark">Dark solid</option>
+          <option value="light">Light solid</option>
+          <option value="nature">Nature vibe</option>
+        </select>
+      </label>
+      <p class="privacy-note">
+        Everything stays on your device. No accounts, no analytics, no AI suggestions, no ads.
+      </p>
+    </div>
+  </div>
+
+  <div id="add-link-modal" class="modal hidden" role="dialog" aria-label="Add quick link">
+    <div class="modal-content">
+      <h3>Add Quick Link</h3>
+      <input type="text" id="link-title" placeholder="Title (e.g. GitHub)" />
+      <input type="url" id="link-url" placeholder="https://…" />
+      <div class="modal-actions">
+        <button id="cancel-link" class="btn secondary">Cancel</button>
+        <button id="save-link" class="btn primary">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="newtab.js"></script>
+</body>
+</html>
